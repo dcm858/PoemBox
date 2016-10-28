@@ -1,0 +1,33 @@
+#!/usr/bin/ruby
+require 'dm-core'
+#require 'rubygems'
+
+
+DataMapper::setup(:default, {:adapter => 'yaml', :path => '/home/root/db'})
+
+class Projections
+    include DataMapper::Resource
+    
+    property :keypress, String, :required => true
+    property :poem, String, :required => true
+    property :video, String, :required => true
+
+DataMapper.finalize
+
+Keypress = {'1','2','3','4','5','6' }
+   
+   @keypress = ARGV[0]
+
+
+print(@keypress)
+
+
+
+    @selected_videos = Selections.all(:keypress => @keypress) 
+
+for items in @selected_videos 
+  print(items.video)
+  exit
+end 
+#print($"{keypress}");
+#puts(@selected_videos)
