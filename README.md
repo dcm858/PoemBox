@@ -1,4 +1,4 @@
-PoemBox
+PoemBox - Incomplete - missing 2 other files:  Maxruby.rb and 2 others
 =======
 
 PoemBox involved actors moving as silhouettes according to numbered selections made by phone, each of which would initiate the playback of a recited poem via the phone, as associated silhouettes would move.  
